@@ -18,7 +18,22 @@ body {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
+  display: flex;
 }
+.header-linkk:hover svg{
+fill: #2196F3;
+}
+.header-icon{
+  width: 16px;
+height: 12px;
+flex-shrink: 0;
+  margin-right: 10px;
+  display: flex;
+}
+.header-icon:hover{
+  fill: #2196f3;
+}
+
 .header-link {
   color: #212121;
   font-size: 14px;
@@ -76,6 +91,42 @@ body {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1.08px;
+
+}
+
+.team-icon {
+  width: 20px;
+height: 20px;
+flex-shrink: 0;
+fill: 
+#AFB1B8;
+margin: 12px;
+justify-content: center;
+}
+.team-box{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+ 
+.team-icon:hover{
+  fill: #FFFFFF;
+
+  
+}
+.team-link:hover{
+  width: 44px;
+height: 44px;
+flex-shrink: 0;
+background-color: #2196f3;
+border-radius: 50%;
+
+}
+.team-icon :hover{
+  background-color: #2196f3;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
 }
 .team-bigtitle {
   color: #212121;
@@ -93,6 +144,7 @@ body {
   line-height: normal;
   letter-spacing: 0.48px;
 }
+
 .team-text {
   color: #757575;
   text-align: center;
@@ -129,17 +181,60 @@ body {
 .footer-contacs {
   background-color: #2f303a;
 }
+.footer-linkin{
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 0.10);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.footer-linkin:hover{
+background-color: #2196f3;
+}
+.footer-icon{
+  width: 20px;
+height: 20px;
+flex-shrink: 0;
+fill: 
+#FFFFFF;
+}
+.footer-box{
+  display: flex;
+  gap: 70px;
+}
+.footer-block{
+  display: flex;
+  gap: 10px;
+}
+.footer-paragraf{
+  color: #FFF;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+margin-bottom: 32px;
+}
 .welcome {
   background-color: #2f303a;
 }
-.header-list {
+.header-list{
   display: flex;
   gap: 50px;
-
   align-items: center;
-  margin-right: 344px;
+  margin-right: auto;
 }
 .header-contacts {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.header-contact {
   display: flex;
   align-items: center;
   gap: 50px;
@@ -174,6 +269,7 @@ body {
 }
 .team-list {
   display: flex;
+  
 }
 .welcome-button {
   display: block;
@@ -382,6 +478,7 @@ body {
   border-radius: 0px 0px 4px 4px;
   border: 1px solid #eee;
 background: #FFF;
+padding-bottom: 42px;
 }
 .team-item {
   border-radius: 0px 0px 4px 4px;
@@ -416,4 +513,55 @@ border: none;
 }
 .team {
   background: #f5f4fa;
+}
+.regular-text{
+  padding-top: 94px;
+  color: #212121;
+text-align: center;
+font-family: Roboto;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.08px;
+}
+.regular{
+  background: #FFF;
+  margin-bottom: 94px;
+  
+}
+.regular-icon {
+  fill: 
+  #AFB1B8;
+  width: 106px;
+  height: 60px;
+  flex-shrink: 0;
+  
+}
+.regular-link{
+  border-radius: 4px;
+border: 1px solid #AFB1B8;
+width: 170px;
+height: 92px;
+flex-shrink: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.regular-link:hover {
+  border-radius: 4px;
+  border: 1px solid #2196F3;
+}
+.regular-link:hover svg{
+  fill: #2196F3;
+}
+
+.regular-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
+.regular-icon:hover{
+  fill: #2196f3;
+
 }
