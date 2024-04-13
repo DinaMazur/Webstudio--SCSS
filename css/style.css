@@ -565,3 +565,31 @@ justify-content: center;
   fill: #2196f3;
 
 }
+
+.servises-paragraf{
+  color: #FFF;
+text-align: center;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+position: absolute;
+}
+.services-item {
+  position: relative;
+}
+
+ .servises-box{
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(47, 48, 58, 0.80);
+  width: 370px;
+  height: 70px;
+ }
