@@ -9,13 +9,15 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
       integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
+      referrerpolicy="no-referrer"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,700&display=swap"
-      rel="stylesheet"/>
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/conteiner.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -24,7 +26,8 @@
     <header class="header">
       <div class="conteiner header-conteiner">
         <a class="logo" href="./index.html"
-          >Web<span class="header-logo">Studio</span></a >
+          >Web<span class="header-logo">Studio</span></a
+        >
         <ul class="header-list">
           <li class="header-item">
             <a class="header-link" href="./index.html">Studio</a>
@@ -42,7 +45,8 @@
               <svg class="header-icon">
                 <use href="./images/symbol-defs.svg#icon-envelope-hover"></use>
               </svg>
-              <span>info@devstudio.com </span></a>
+              <span>info@devstudio.com </span></a
+            >
           </li>
           <li class="header-contact">
             <a class="header-linkk" href="tel:+380961111111">
@@ -63,7 +67,9 @@
         <div class="conteiner welcome-conteiner">
           <h1 class="welcome-title">effective solutions for</h1>
           <h1 class="welcome-title">for your Business</h1>
-          <button class="welcome-button">Order a service</button>
+          <button data-modal-open class="welcome-button" type="submit">
+            Order a service
+          </button>
         </div>
       </section>
 
@@ -112,25 +118,24 @@
           <ul class="services-list">
             <li class="services-item">
               <img class="services-photo" src="./images/komp.webp" alt="komp" />
-<div class="servises-box">
-              <p class="servises-paragraf">Десктопні додатки</p>
-            </div>
+              <div class="servises-box">
+                <p class="servises-paragraf">Десктопні додатки</p>
+              </div>
             </li>
             <li class="services-item">
               <img class="services-photo" src="./images/phon.webp" alt="phon" />
               <div class="servises-box">
-<p class="servises-paragraf">Мобільні додатки</p>
-</div>
+                <p class="servises-paragraf">Мобільні додатки</p>
+              </div>
             </li>
 
             <li class="services-item">
               <img class="services-photo" src="./images/graf.webp" alt="graf" />
               <div class="servises-box">
-              <p class="servises-paragraf"> Дизайнерські рішення</p>
-            </div>
+                <p class="servises-paragraf">Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
-        </div>
         </div>
       </section>
 
@@ -359,7 +364,72 @@
             </li>
           </ul>
         </ul>
+        <div class="form-box">
+          <h6 class="footer-paragraf">Subscribe to the newsletter</h6>
+          <label  class="footer-label" for="">
+          <input placeholder="E-mail" class="Footer-form" type="text" />
+          <button class="footer-button" type="submit">Subscribe</button>
+        </label>
+        </div>
       </div>
+      
     </footer>
+
+    <div data-modal class="backdrop">
+      <div class="modal">
+        <button class="modal-buttone" data-modal-close type="button">
+          <svg
+            class="modal-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+          >
+            <path
+              d="M15 4.10786L13.8921 3L9.5 7.39214L5.10786 3L4 4.10786L8.39214 8.5L4 12.8921L5.10786 14L9.5 9.60786L13.8921 14L15 12.8921L10.6079 8.5L15 4.10786Z"
+              fill="black"
+            />
+          </svg>
+        </button>
+        <h3 class="modal-text">Залиште свої дані, ми вам передзвонимо</h3>
+        <ul class="modal-list">
+          <li class="modal-item">
+            <p class="modal-paragraf">Ім'я</p>
+            <input class="modal-forms"  type="text" />
+            <svg class="modal-svg">
+              <use href="./images/symbol-defs.svg#icon-modalperson"> </use>
+            </svg>
+          </li>
+          <li class="modal-item">
+            <p class="modal-paragraf">Телефон</p>
+            <input class="modal-forms" type="text" />
+            <svg class="modal-svg">
+              <use href="./images/symbol-defs.svg#icon-modalphone"> </use>
+            </svg>
+          </li>
+          <li class="modal-item">
+            <p class="modal-paragraf">Пошта</p>
+            <input class="modal-forms" type="text" />
+            <svg class="modal-svg">
+              <use href="./images/symbol-defs.svg#icon-modalemail"> </use>
+            </svg>
+          </li>
+        </ul>
+        <p class="modal-paragraf">Коментар</p>
+        <input placeholder="Введіть текст" class="modal-forms2" type="text" />
+<label class="modal-box" for="">
+        <input class="modal-chexbox" type="checkbox">
+        <p class="modal-inf">
+          Погоджуюся з розсилкою та приймаю
+          <a class="modal-link" href="">Умови договору</a>
+        </p>
+      </label>
+      <div class="modal-box2">
+        <button class="modal-button" type="submit">Відправити</button>
+      </div>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
