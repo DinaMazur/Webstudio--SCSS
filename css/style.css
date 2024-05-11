@@ -40,6 +40,27 @@ body {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
+  position: relative;
+}
+.header-link::after{
+  content: "";
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  background-color: #2196f3;
+  opacity: 0;
+  position: absolute;
+  bottom: -34px;
+  display: block;
+  transition-property: opacity, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transform: scale(0);
+
+}
+.header-link:hover::after{
+opacity: 1;
+transform: scale(1);
 }
 
 .header-link:hover {
