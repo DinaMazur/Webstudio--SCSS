@@ -19,6 +19,10 @@ body {
   line-height: normal;
   letter-spacing: 0.28px;
   display: flex;
+  transition-property:  color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition-delay: 2s; */
 }
 .header-linkk:hover svg {
   fill: #2196f3;
@@ -41,6 +45,9 @@ body {
   line-height: normal;
   letter-spacing: 0.28px;
   position: relative;
+  transition-property:  color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link::after{
   content: "";
@@ -121,6 +128,9 @@ transform: scale(1);
   fill: #afb1b8;
   margin: 12px;
   justify-content: center;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-box {
   display: flex;
@@ -131,10 +141,16 @@ transform: scale(1);
 .team-icon:hover {
   fill: #ffffff;
 }
-.team-link:hover {
+.team-link{
   width: 44px;
   height: 44px;
   flex-shrink: 0;
+  transition-property: background-color, border-radius;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-link .team-icon:hover {
+
   background-color: #2196f3;
   border-radius: 50%;
 }
@@ -205,6 +221,9 @@ transform: scale(1);
   display: flex;
   justify-content: center;
   align-items: center;
+  transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-linkin:hover {
   background-color: #2196f3;
@@ -581,6 +600,9 @@ body {
   width: 106px;
   height: 60px;
   flex-shrink: 0;
+  transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .regular-link {
   border-radius: 4px;
@@ -591,6 +613,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-property: border, border-radius;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .regular-link:hover {
   border-radius: 4px;
@@ -687,8 +712,11 @@ body {
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   padding-left: 42px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-forms:hover modal-svg {
+.modal-forms.modal-svg:hover {
   fill: #2196f3;
 }
 .modal-svg:hover {
@@ -782,6 +810,7 @@ body {
   letter-spacing: 0.42px;
 }
 .modal-icon {
+  
 }
 .is-hidden {
   opacity: 0;
@@ -809,6 +838,9 @@ body {
   top: 0;
   left: 0;
   opacity: 0;
+  transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .ourworks-overley:hover {
   opacity: 1;
