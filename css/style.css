@@ -681,7 +681,9 @@ body {
   top: 221px;
   left: 536px;
   padding: 40px;
+  transition-property: ;
 }
+.welcome-button{}
 
 .modal-text {
   color: #212121;
