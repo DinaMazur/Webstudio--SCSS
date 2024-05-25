@@ -96,6 +96,7 @@ transform: scale(1);
   border-radius: 4px;
   background: #2196f3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border: none;
 }
 .quality-title {
   color: #212121;
@@ -668,6 +669,10 @@ body {
   position: fixed;
   left: 0px;
   top: 0px;
+  animation-timing-function: - cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: opacity visibility;
+
 }
 .modal {
   width: 528px;
@@ -762,6 +767,7 @@ body {
   border-radius: 4px;
   background: #2196f3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border: none;
 }
 .modal-box {
   display: flex;
@@ -840,16 +846,23 @@ body {
   top: 0;
   left: 0;
   opacity: 0;
-  transition-property: opacity;
+  
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(100%);
+
 }
 .ourworks-overley:hover {
   opacity: 1;
 }
-.ourworks-item {
+.main-overley{
   position: relative;
   overflow: hidden;
+}
+.ourworks-item:hover .ourworks-overley {
+  overflow: visible;
+  transform: translateY(0%);
+
 }
 .overley-text {
   color: #fff;
