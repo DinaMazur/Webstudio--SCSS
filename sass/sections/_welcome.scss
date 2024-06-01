@@ -1,0 +1,66 @@
+.welcome-title {
+    color: #fff;
+    text-align: center;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 60px; /* 136.364% */
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
+  }
+  .welcome-button {
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px; /* 187.5% */
+    letter-spacing: 0.96px;
+    border-radius: 4px;
+    background: #2196f3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border: none;
+    animation-name: welcome-button;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  .welcome {
+    background-color: #2f303a;
+  }
+  .welcome {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .welcome-conteiner {
+    display: block;
+    align-items: center;
+  }
+  .welcome-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    width: 216px;
+    height: 50px;
+    margin-top: 30px;
+  }
+  .welcome {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/backgroundim.webp);
+  }
+  @keyframes welcome-button{
+    0%{
+  transform: scale(1,1);
+  
+    }
+    15%{
+  transform: scale(1.8,1.8);
+    }
+    40%{
+  transform: scale(1.8,1.8);
+    }
+    100%{
+  transform: scale(1,1);
+    }
+  }

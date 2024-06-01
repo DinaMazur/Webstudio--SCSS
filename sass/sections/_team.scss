@@ -1,0 +1,158 @@
+.team-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    fill: #afb1b8;
+    margin: 12px;
+    justify-content: center;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .team-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .team-icon:hover {
+    fill: #ffffff;
+  }
+  .team-link{
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    transition-property: background-color, border-radius;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .team-link .team-icon:hover {
+  
+    background-color: #2196f3;
+    border-radius: 50%;
+  }
+  .team-icon :hover {
+    background-color: #2196f3;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+  }
+  .team-bigtitle {
+    color: #212121;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+  }
+  .team-title {
+    color: #212121;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
+  }
+  
+  .team-text {
+    color: #757575;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.48px;
+  }
+  
+.team-list {
+    display: flex;
+  }
+  
+  .team-bigtitle {
+    padding-top: 94px;
+    padding-bottom: 50px;
+  }
+  .team-list {
+    padding-bottom: 94px;
+  }
+  
+  .team-tittle {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .team-list {
+    gap: 30px;
+  }
+  .team-item {
+    border-radius: 0px 0px 4px 4px;
+    border: 1px solid #eee;
+    background: #fff;
+    padding-bottom: 42px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    }
+    .team-item:nth-child(1n){
+   animation-name: team-item1;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+  
+    }
+    .team-item:nth-child(2n){
+      animation-name: team-item2;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+    }
+    
+  .team-tittle {
+    margin-top: 30px;
+  }
+  .team-text {
+    margin-top: 10px;
+    padding-bottom: 30px;
+  }
+  @keyframes team-item1{
+    0%{
+      transform: translateY(0px);
+    }
+    5%{
+      transform: translateY(30px);
+    }
+    10%{
+      transform: translateY(0px);
+    }
+    15%{
+      transform: translateY(-30px);
+    }
+    20%{
+      transform: translateY(0px);
+      
+    }
+    100%{
+      transform: translateY(0px);
+    }
+  }
+  @keyframes team-item2{
+  
+    0%{
+      transform: translateY(0px);
+    }
+    5%{
+      transform: translateY(-30px);
+    }
+    10%{
+      transform: translateY(0px);
+    }
+    15%{
+      transform: translateY(30px);
+    }
+    20%{
+      transform: translateY(0px);
+      
+    }
+    100%{
+      transform: translateY(0px);
+    }
+  }
+  .team {
+    background: #f5f4fa;
+  }
