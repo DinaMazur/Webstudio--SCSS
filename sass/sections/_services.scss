@@ -1,25 +1,24 @@
-.services-title {
+.services {
+  padding-bottom: 94px;
+  &__title {
     color: #212121;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1.08px;
+    margin-bottom: 50px;
   }
-  .services-list {
+  &__list {
     display: flex;
     gap: 30px;
   }
-  .services-title {
-    margin-bottom: 50px;
-  }
-  .services {
-    padding-bottom: 94px;
-  }
-  .services-item {
+
+
+  &__item {
     position: relative;
   }
-  .servises-paragraf {
+  &__paragraf {
     color: #fff;
     text-align: center;
     font-family: Roboto;
@@ -33,7 +32,7 @@
   }
   
   
-  .servises-box {
+  &__box {
     bottom: 0px;
     left: 0px;
     position: absolute;
@@ -44,3 +43,5 @@
     width: 370px;
     height: 70px;
   }
+}
+

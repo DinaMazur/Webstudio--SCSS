@@ -1,0 +1,77 @@
+
+
+@keyframes welcome-button{
+    0%{
+  transform: scale(1,1);
+  
+    }
+    15%{
+  transform: scale(1.8,1.8);
+    }
+    40%{
+  transform: scale(1.8,1.8);
+    }
+    100%{
+  transform: scale(1,1);
+    }
+  }
+  @keyframes team-item1{
+    0%{
+      transform: translateY(0px);
+    }
+    5%{
+      transform: translateY(30px);
+    }
+    10%{
+      transform: translateY(0px);
+    }
+    15%{
+      transform: translateY(-30px);
+    }
+    20%{
+      transform: translateY(0px);
+      
+    }
+    100%{
+      transform: translateY(0px);
+    }
+  }
+  @keyframes team-item2{
+  
+    0%{
+      transform: translateY(0px);
+    }
+    5%{
+      transform: translateY(-30px);
+    }
+    10%{
+      transform: translateY(0px);
+    }
+    15%{
+      transform: translateY(30px);
+    }
+    20%{
+      transform: translateY(0px);
+      
+    }
+    100%{
+      transform: translateY(0px);
+    }
+  }
+  .team {
+    background: #f5f4fa;
+  }
+  @keyframes regular-icon{
+    0%{
+  transform: rotate(0);
+    }
+    20%{
+  transform: rotate(80deg);
+    }
+    50%{
+  transform: rotate(140deg);
+    }
+    100%{
+  transform: rotate(360deg);
+    }
+  }

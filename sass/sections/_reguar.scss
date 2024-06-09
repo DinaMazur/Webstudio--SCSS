@@ -1,6 +1,8 @@
 
-
-.regular-text {
+.regular {
+  background: #fff;
+  margin-bottom: 94px;
+  &__text {
     padding-top: 94px;
     color: #212121;
     text-align: center;
@@ -11,11 +13,8 @@
     line-height: normal;
     letter-spacing: 1.08px;
   }
-  .regular {
-    background: #fff;
-    margin-bottom: 94px;
-  }
-  .regular-icon {
+  
+  &__icon {
     fill: #afb1b8;
     width: 106px;
     height: 60px;
@@ -27,7 +26,7 @@
       animation-duration: 2s;
       animation-iteration-count: infinite;
   }
-  .regular-link {
+  &__link {
     border-radius: 4px;
     border: 1px solid #afb1b8;
     width: 170px;
@@ -40,33 +39,23 @@
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .regular-link:hover {
+  &__link:hover {
     border-radius: 4px;
     border: 1px solid #2196f3;
   }
-  .regular-link:hover svg {
+  &__link:hover svg {
     fill: #2196f3;
   }
   
-  .regular-list {
+  &__list {
     display: flex;
     gap: 30px;
     margin-top: 50px;
+    margin-left: 400px;
   }
-  .regular-icon:hover {
+  &__icon:hover {
     fill: #2196f3;
   }
-  @keyframes regular-icon{
-    0%{
-  transform: rotate(0);
-    }
-    20%{
-  transform: rotate(80deg);
-    }
-    50%{
-  transform: rotate(140deg);
-    }
-    100%{
-  transform: rotate(360deg);
-    }
-  }
+}
+
+  

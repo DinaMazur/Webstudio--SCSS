@@ -1,5 +1,6 @@
-
-.footer-logo {
+.footer {
+  padding-top: 72px;
+  &__logo {
     color: #2196f3;
     font-family: Raleway;
     font-size: 26px;
@@ -7,27 +8,30 @@
     line-height: normal;
     letter-spacing: 0.78px;
   }
-  .footer-partlogo {
+  &__partlogo {
     color: #fff;
   }
-  .footer-adress {
+  &__adress {
     color: #fff;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px; /* 171.429% */
     letter-spacing: 0.42px;
   }
-  .footer-link {
+  &__link {
     color: rgba(255, 255, 255, 0.6);
     font-size: 14px;
     font-weight: 400;
     line-height: 24px; /* 171.429% */
     letter-spacing: 0.42px;
   }
-  .footer-contacs {
+  &__contacs {
     background-color: #2f303a;
+    background-color: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
-  .footer-linkin {
+&__linkin {
     border-radius: 100px;
     background-color: rgba(255, 255, 255, 0.1);
     width: 44px;
@@ -39,28 +43,28 @@
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .footer-linkin:hover {
+  &__linkin:hover {
     background-color: #2196f3;
   }
-  .footer-icon {
+  &__icon {
     width: 20px;
     height: 20px;
     flex-shrink: 0;
     fill: #ffffff;
   }
-  .footer-box {
+  &__box {
     display: flex;
     gap: 70px;
   }
-  .footer-label {
+  &__label {
     display: flex;
     gap: 12px;
   }
-  .footer-block {
+  &__block {
     display: flex;
     gap: 10px;
   }
-  .footer-paragraf {
+  &__paragraf {
     color: #fff;
     font-family: Roboto;
     font-size: 14px;
@@ -71,7 +75,7 @@
     text-transform: uppercase;
     margin-bottom: 32px;
   }
-  .Footer-form {
+  &__form {
     width: 358px;
     height: 50px;
     flex-shrink: 0;
@@ -81,7 +85,7 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     padding-left: 16px;
   }
-  .footer-button {
+  &__button {
     color: #fff;
     text-align: center;
     font-family: Roboto;
@@ -98,11 +102,9 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   }
   
-  .footer {
-    padding-top: 72px;
-  }
+  
 
-  .footer-logo {
+  &__logo {
     display: block;
     color: #2196f3;
     font-family: Raleway;
@@ -112,25 +114,24 @@
     letter-spacing: 0.78px;
     margin-bottom: 20px;
   }
-  .footer-partlogo {
+  &__partlogo {
     color: #fff;
   }
-  .footer-adress {
+  &__adress {
     color: #fff;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px; /* 171.429% */
     letter-spacing: 0.42px;
   }
-  .footer-link {
+  &__link {
     color: rgba(255, 255, 255, 0.6);
     font-size: 14px;
     font-weight: 400;
     line-height: 24px; /* 171.429% */
     letter-spacing: 0.42px;
   }
-  .footer-contacs {
-    background-color: #2f303a;
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+
+}
+
+ 

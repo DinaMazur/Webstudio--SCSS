@@ -1,5 +1,6 @@
-
-.ourworks-maintext {
+.ourworks {
+  padding-bottom: 94px;
+  &__maintext {
     color: hsl(0, 0%, 13%);
     font-family: Roboto;
     font-size: 18px;
@@ -8,7 +9,7 @@
     line-height: 36px; /* 200% */
     letter-spacing: 1.08px;
   }
-  .ourworks-text {
+  &__text {
     color: #757575;
     font-family: Roboto;
     font-size: 16px;
@@ -18,23 +19,20 @@
     letter-spacing: 0.48px;
   }
   
-  
-  .ourworks-item {
+  &__item {
     width: 370px;
     border: 1px solid #eee;
     background: #fff;
     flex-basis: calc((100% - (30px * 2)) / 3);
   }
-  .ourworks-list {
+  &__list {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
   }
-  .ourworks {
-    padding-bottom: 94px;
-  }
-  .ourworks-box {
+
+  &__box {
     margin-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
@@ -42,14 +40,14 @@
   }
   
   
-  .ourworks-item:hover {
+  &__item:hover {
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
       0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
     border: 1px solid #eee;
     max-width: 370px;
     flex-basis: calc(100% - (30px * 2) / 3);
   }
-  .ourworks-overley {
+  &__overley {
     width: 370px;
     height: 294px;
     position: absolute;
@@ -63,19 +61,19 @@
       transform: translateY(100%);
   
   }
-  .ourworks-overley:hover {
+  &__overley:hover {
     opacity: 1;
   }
-  .main-overley{
+  &__mainoverley{
     position: relative;
     overflow: hidden;
   }
-  .ourworks-item:hover .ourworks-overley {
+  &__item:hover .ourworks-overley {
     overflow: visible;
     transform: translateY(0%);
   
   }
-  .overley-text {
+  &__text {
     color: #fff;
     font-family: Roboto;
     font-size: 18px;
@@ -88,3 +86,5 @@
     padding-left: 24px;
     padding-right: 24px;
   }
+
+}
