@@ -10,7 +10,7 @@
     letter-spacing: 1.08px;
   }
   &__text {
-    color: #757575;
+    color: $text-color;
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
@@ -22,14 +22,12 @@
   &__item {
     width: 370px;
     border: 1px solid #eee;
-    background: #fff;
+    @extend%background;
     flex-basis: calc((100% - (30px * 2)) / 3);
   }
   &__list {
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include flexbox ($gap:30px, $flex-wrap:wrap);
+    
   }
 
   &__box {
@@ -51,7 +49,7 @@
     width: 370px;
     height: 294px;
     position: absolute;
-    background: rgba(33, 150, 243, 0.9);
+    background: $accent-color;
     top: 0;
     left: 0;
     opacity: 0;
@@ -74,7 +72,7 @@
   
   }
   &__text {
-    color: #fff;
+    color: $aditionalmini-color;
     font-family: Roboto;
     font-size: 18px;
     font-style: normal;

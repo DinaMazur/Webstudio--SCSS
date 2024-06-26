@@ -1,6 +1,6 @@
 
 .regular {
-  background: #fff;
+ @extend%background;
   margin-bottom: 94px;
   &__text {
     padding-top: 94px;
@@ -15,7 +15,7 @@
   }
   
   &__icon {
-    fill: #afb1b8;
+    fill: $grey-color;
     width: 106px;
     height: 60px;
     flex-shrink: 0;
@@ -28,33 +28,30 @@
   }
   &__link {
     border-radius: 4px;
-    border: 1px solid #afb1b8;
+    border: 1px solid $grey-color;
     width: 170px;
     height: 92px;
     flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+ @include flexbox;
     transition-property: border, border-radius;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__link:hover {
     border-radius: 4px;
-    border: 1px solid #2196f3;
+    border: 1px solid $accent-color;
   }
   &__link:hover svg {
-    fill: #2196f3;
+    fill: $accent-color;
   }
   
   &__list {
-    display: flex;
-    gap: 30px;
+    @include flexbox ($gap:30px);
     margin-top: 50px;
     margin-left: 400px;
   }
   &__icon:hover {
-    fill: #2196f3;
+    fill: $accent-color;
   }
 }
 

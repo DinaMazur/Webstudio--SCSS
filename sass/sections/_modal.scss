@@ -15,7 +15,7 @@
     height: 581px;
     flex-shrink: 0;
     border-radius: 4px;
-    background: #fff;
+    @extend%background;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
       0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
     position: relative;
@@ -30,15 +30,13 @@
       width: 30px;
       height: 30px;
       border-radius: 50%;
-      background-color: #fff;
+      @extend%background;
       border: solid 1px rgba(0, 0, 0, 0.1);
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flexbox;
     }
    
     &__text {
-      color: #212121;
+      color: $tittle-color;
       text-align: center;
       font-family: Roboto;
       font-size: 20px;
@@ -49,7 +47,7 @@
       margin-bottom: 12px;
     }
     &__paragraf {
-      color: #757575;
+      color: $text-color;
       font-family: Roboto;
       font-size: 12px;
       font-style: normal;
@@ -71,22 +69,20 @@
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
     &__forms.modal-svg:hover {
-      fill: #2196f3;
+      fill: $accent-color;
     }
     &__svg:hover {
-      fill: #2196f3;
+      fill: $accent-color;
     }
     &__forms:hover {
       border-radius: 4px;
-      border: 1px solid #2196f3;
+      border: 1px solid $accent-color;
     }
     
     &__list {
-      display: flex;
+    @include flexbox ($gap:10px);
       flex-direction: column;
-      gap: 10px;
       width: 100%;
-      align-items: center;
       margin-bottom: 10px;
     }
     &__forms2 {
@@ -100,23 +96,7 @@
       padding-top: 12px;
     }
     &__button {
-      color: #fff;
-      text-align: center;
-      font-family: Roboto;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 30px; /* 187.5% */
-      letter-spacing: 0.96px;
-      width: 200px;
-      height: 50px;
-      flex-shrink: 0;
-      border-radius: 4px;
-      background: #2196f3;
-      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-      border: none;
-margin-bottom: 30px;
-
+      @extend%button;
       
     }
     &__box {
@@ -126,9 +106,7 @@ margin-bottom: 30px;
     }
     &__box2 {
       width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flexbox;
       margin-top: 30px;
     }
     &__svg {
@@ -137,7 +115,7 @@ margin-bottom: 30px;
       height: 18px;
       left: 12px;
       top: 29px;
-      fill: #212121;
+      fill: $tittle-color;
     }
     &__item {
       position: relative;
@@ -149,7 +127,7 @@ margin-bottom: 30px;
       margin-bottom: 20px;
     }
     &__link {
-      color: #2196f3;
+      color: $accent-color;
       font-family: Roboto;
       font-size: 14px;
       font-style: normal;
@@ -159,7 +137,7 @@ margin-bottom: 30px;
       text-decoration-line: underline;
     }
     &__inf {
-      color: #757575;
+      color: $text-color;
       font-family: Roboto;
       font-size: 14px;
       font-style: normal;
