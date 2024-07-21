@@ -2,25 +2,36 @@
   padding-top: 25px;
   padding-bottom: 25px;
   border: #ececec solid 2px;
- 
   &__conteiner {
-  @include flexbox;
+    @include flexbox();
   }
   &__logo {
     color: $tittle-color;
   }
   &__alogo {
-    @extend%logo;
+    color: $accent-color;
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+    animation-name: alogo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
   }
   &__list {
-    @include flexbox($gap:50px );
+    @include flexbox ($gap: 50px);
     margin-right: auto;
+    display: none;
+    @media screen and (min-width: 1328px) {
+      display: flex;
+    }
   }
   &__alogo {
     display: block;
     margin-right: 93px;
   }
- 
+
   &__link {
     color: $tittle-color;
     font-size: 14px;
@@ -51,58 +62,71 @@
     opacity: 1;
     transform: scale(1);
   }
-  
+
   &__link:hover {
     color: $accent-color;
   }
   &__contacts {
-    @include flexbox($gap:50px)
+    @include flexbox($gap: 50px);
   }
   &__contact {
- @include flexbox($gap:50px)
+    @include flexbox($gap: 50px);
   }
+  &__iccon {
+    display: flex;
+    border: none;
+    width: 40px;
+    height: 40px;
+    @media screen and (min-width: 1328px) {
+      display: none;
+    }
+  }
+  &__button {
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    @media screen and (min-width: 1328px) {
+      display: none;
+    }
+  }
+  &__navigation {
+    display: none;
+    @media screen and (min-width: 1328px) {
+      display: none;
+    }
+  }
+
   &__icon {
     width: 16px;
     height: 12px;
     flex-shrink: 0;
     margin-right: 10px;
-  @include flexbox;
+    @include flexbox();
   }
   &__icon:hover {
     fill: $accent-color;
   }
-  
-&__linkk {
-  color: $text-color;
-  font-size: 14px;
-font-weight: 500;
-line-height: normal;
-letter-spacing: 0.28px;
- @include flexbox;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  /* transition-delay: 2s; */
+
+  &__linkk {
+    color: $text-color;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    @include flexbox();
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition-delay: 2s; */
+  }
+  &__linkk:hover svg {
+    fill: $accent-color;
+  }
+
+  &__linkk:hover {
+    // локальна змінна
+    $accent-color: skyblue;
+    color: $accent-color;
+  }
 }
-&__linkk:hover svg {
-  fill: $accent-color;
-}
-
-
-
-
-&__linkk:hover { 
-  // локальна змінна
- $accent-color:skyblue;
-  color: $accent-color;
-}
-}
-
-
-
-
-
-
-
-
-

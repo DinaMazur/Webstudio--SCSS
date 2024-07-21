@@ -9,10 +9,10 @@
     letter-spacing: 0.78px;
   }
   &__partlogo {
-    color: $aditionalmini-color;
+    color: $aditional-color;
   }
   &__adress {
-    color: $aditionalmini-color;
+    color: $aditional-color;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px; /* 171.429% */
@@ -36,7 +36,7 @@
     background-color: rgba(255, 255, 255, 0.1);
     width: 44px;
     height: 44px;
-    @include flexbox;
+    @include flexbox();
     transition-property: background-color;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -51,16 +51,17 @@
     fill:$aditional-color;
   }
   &__box {
-    @include flexbox($gap:70px)
+    @include flexbox($gap:70px);
   }
+
   &__label {
-    @include flexbox($gap:12px)
+    @include flexbox($gap:12px);
   }
   &__block {
   @include flexbox($gap:10px);
   }
   &__paragraf {
-    color: $aditionalmini-color;
+    color: $aditional-color;
     font-family: Roboto;
     font-size: 14px;
     font-style: normal;
@@ -91,10 +92,10 @@
   }
   
   &__partlogo {
-    color:$aditionalmini-color;
+    color:$aditional-color;
   }
   &__adress {
-    color: $aditionalmini-color;
+    color: $aditional-color;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px; /* 171.429% */

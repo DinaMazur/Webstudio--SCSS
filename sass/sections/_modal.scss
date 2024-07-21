@@ -32,7 +32,7 @@
       border-radius: 50%;
       @extend%background;
       border: solid 1px rgba(0, 0, 0, 0.1);
-      @include flexbox;
+      @include flexbox();
     }
    
     &__text {
@@ -106,7 +106,7 @@
     }
     &__box2 {
       width: 100%;
-      @include flexbox;
+      @include flexbox();
       margin-top: 30px;
     }
     &__svg {

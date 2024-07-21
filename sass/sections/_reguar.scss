@@ -32,7 +32,7 @@
     width: 170px;
     height: 92px;
     flex-shrink: 0;
- @include flexbox;
+ @include flexbox();
     transition-property: border, border-radius;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -48,7 +48,7 @@
   &__list {
     @include flexbox ($gap:30px);
     margin-top: 50px;
-    margin-left: 400px;
+    margin-left: 200px;
   }
   &__icon:hover {
     fill: $accent-color;

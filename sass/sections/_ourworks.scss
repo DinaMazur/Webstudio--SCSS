@@ -26,7 +26,7 @@
     flex-basis: calc((100% - (30px * 2)) / 3);
   }
   &__list {
-    @include flexbox ($gap:30px, $flex-wrap:wrap);
+    @include flexbox ($gap:30px,);
     
   }
 
@@ -72,7 +72,7 @@
   
   }
   &__text {
-    color: $aditionalmini-color;
+    color: $aditional-color;
     font-family: Roboto;
     font-size: 18px;
     font-style: normal;

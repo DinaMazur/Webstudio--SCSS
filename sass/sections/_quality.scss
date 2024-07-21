@@ -20,6 +20,7 @@
   
   &__list {
     @include flexbox ($gap:30px);
+    flex-wrap: wrap;
   }
  
   &__item:nth-child(1)::before {
