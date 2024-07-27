@@ -1,7 +1,11 @@
 .services {
+  display: none;
+  @media screen and (min-width:1200px) {
+    display: block;
+   }
   padding-bottom: 94px;
   &__title {
-    color:$tittle-color;
+    color: #212121;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -10,7 +14,8 @@
     margin-bottom: 50px;
   }
   &__list {
-    @include flexbox ($gap:30px);
+   display: flex;
+   gap: 30px;
   }
 
 
@@ -18,7 +23,7 @@
     position: relative;
   }
   &__paragraf {
-    color: $aditional-color;
+    color: #ffffff;
     text-align: center;
     font-family: Roboto;
     font-size: 14px;
@@ -35,7 +40,7 @@
     bottom: 0px;
     left: 0px;
     position: absolute;
-    @mixin flexbox{};
+   display: flex;
     background-color: rgba(47, 48, 58, 0.8);
     width: 370px;
     height: 70px;

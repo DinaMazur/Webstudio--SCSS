@@ -1,7 +1,8 @@
 .footer {
+  display: block;
   padding-top: 72px;
   &__logo {
-    color: $accent-color;
+    color: #2196f3;
     font-family: Raleway;
     font-size: 26px;
     font-weight: 700;
@@ -9,10 +10,10 @@
     letter-spacing: 0.78px;
   }
   &__partlogo {
-    color: $aditional-color;
+    color: #ffffff;
   }
   &__adress {
-    color: $aditional-color;
+    color: #ffffff;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px; /* 171.429% */
@@ -26,8 +27,8 @@
     letter-spacing: 0.42px;
   }
   &__contacs {
-    background-color: $black-color;
-    background-color:$black-color ;
+    background-color: #2f303a;
+    background-color:#2f303a;
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -36,32 +37,36 @@
     background-color: rgba(255, 255, 255, 0.1);
     width: 44px;
     height: 44px;
-    @include flexbox();
+  display: flex;
     transition-property: background-color;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__linkin:hover {
-    background-color: $accent-color;
+    background-color:#2196f3;
+  
   }
   &__icon {
     width: 20px;
     height: 20px;
     flex-shrink: 0;
-    fill:$aditional-color;
+    fill:#ffffff;
   }
   &__box {
-    @include flexbox($gap:70px);
+   display: flex;
+   gap: 70px;
   }
 
   &__label {
-    @include flexbox($gap:12px);
+ display: flex;
+ gap: 12px;
   }
   &__block {
-  @include flexbox($gap:10px);
+display: flex;
+gap: 10px;
   }
   &__paragraf {
-    color: $aditional-color;
+    color: #ffffff;
     font-family: Roboto;
     font-size: 14px;
     font-style: normal;
@@ -82,20 +87,43 @@
     padding-left: 16px;
   }
   &__button {
-@extend%button;
+    color: #ffffff;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 187.5% */
+    letter-spacing: 0.96px;
+    width: 200px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #2196f3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border: none;
+margin-bottom: 30px;
   }
   
   
 
   &__alogo {
-  @extend%logo;
+    color: #2196f3;
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+    animation-name: alogo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
   }
   
   &__partlogo {
-    color:$aditional-color;
+    color:#ffffff;
   }
   &__adress {
-    color: $aditional-color;
+    color: #ffffff;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px; /* 171.429% */

@@ -1,5 +1,6 @@
-@import "./utilites/variables";
+
 @import "./utilites/mixin";
+@import "./utilites/placeholder";
 @import "./base/common";
 @import "./utilites/animation";
 @import "./sections/header";
@@ -8,7 +9,7 @@
 @import "./sections/services";
 @import "./sections/team";
 @import "./sections/reguar";
-@import "./sections/footer";
-@import "./sections/modal";
 @import "./sections/kinds";
 @import "./sections/ourworks";
+@import "./sections/footer";
+@import "./sections/modal";

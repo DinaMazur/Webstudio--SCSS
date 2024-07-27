@@ -1,30 +1,61 @@
 .header {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media screen and (min-width:1200px){
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+  @media screen and (min-width:768px){
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
   border: #ececec solid 2px;
   &__conteiner {
-    @include flexbox();
+   display: flex;
+  }
+  &__menu {
+    width: 40px;
+    height: 40px;
+    margin-left: 90px;
+    @media screen and (min-width:1200px ) {
+      display: none;
+    }
+
   }
   &__logo {
-    color: $tittle-color;
+    color: #212121;
   }
   &__alogo {
-    color: $accent-color;
+    color:#2196f3;
     font-family: Raleway;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: 0.78px;
+    letter-spacing: 0.72px;
     animation-name: alogo;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+   
+    @media screen and (min-width:1200px) {
+      font-size: 26px;
+      letter-spacing: 0.78px;
+      align-items: center;
+      
+    }
+
+   
   }
   &__list {
-    @include flexbox ($gap: 50px);
+   display: none;
+   gap: 50px;
+   justify-content: center;
+   align-items: center;
     margin-right: auto;
-    display: none;
-    @media screen and (min-width: 1328px) {
+    margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
       display: flex;
+      justify-content: center;
     }
   }
   &__alogo {
@@ -33,7 +64,7 @@
   }
 
   &__link {
-    color: $tittle-color;
+    color: #212121;
     font-size: 14px;
     font-weight: 500;
     line-height: normal;
@@ -48,7 +79,7 @@
     height: 4px;
     width: 100%;
     border-radius: 2px;
-    background-color: $accent-color;
+    background-color: #2196f3;
     opacity: 0;
     position: absolute;
     bottom: -34px;
@@ -64,20 +95,27 @@
   }
 
   &__link:hover {
-    color: $accent-color;
+    color: #2196f3;
   }
   &__contacts {
-    @include flexbox($gap: 50px);
+    display: none;
+    gap: 50px;
+    align-items: center;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
   }
   &__contact {
-    @include flexbox($gap: 50px);
+    display: flex;
+    gap: 50px;
+    
   }
   &__iccon {
     display: flex;
     border: none;
     width: 40px;
     height: 40px;
-    @media screen and (min-width: 1328px) {
+    @media screen and (min-width: 1200px) {
       display: none;
     }
   }
@@ -102,31 +140,31 @@
     height: 12px;
     flex-shrink: 0;
     margin-right: 10px;
-    @include flexbox();
+    display: flex;
   }
   &__icon:hover {
-    fill: $accent-color;
+    fill: #2196f3;
   }
 
   &__linkk {
-    color: $text-color;
+    color: #757575;
     font-size: 14px;
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
-    @include flexbox();
+   display: flex;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     /* transition-delay: 2s; */
   }
   &__linkk:hover svg {
-    fill: $accent-color;
+    fill: #2196f3;
   }
 
   &__linkk:hover {
     // локальна змінна
     $accent-color: skyblue;
-    color: $accent-color;
+    color: #2196f3;
   }
 }

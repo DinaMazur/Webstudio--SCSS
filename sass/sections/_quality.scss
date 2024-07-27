@@ -3,7 +3,7 @@
   padding-top: 94px;
   padding-bottom: 94px;
   &__title {
-    color: $tittle-color;
+    color: #212121;
     font-size: 14px;
     font-weight: 700;
     line-height: normal;
@@ -11,7 +11,7 @@
     text-transform: uppercase;
   }
  &__text {
-    color: $text-color;
+    color: #757575;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px; /* 171.429% */
@@ -19,13 +19,15 @@
   }
   
   &__list {
-    @include flexbox ($gap:30px);
+   display: flex;
+   gap: 30px;
     flex-wrap: wrap;
+    
   }
  
   &__item:nth-child(1)::before {
     content: " ";
-    background-color: $background-color;
+    background-color: #f5f4fa;
     background-image: url(../images/antenna.png);
     width: 270px;
     height: 120px;
@@ -42,7 +44,7 @@
   }
   &__item:nth-child(2)::before {
     content: " ";
-    background-color:$background-color;
+    background-color:#f5f4fa;
     background-image: url(../images/clock.png);
     width: 270px;
     height: 120px;
@@ -54,7 +56,7 @@
   }
   &__item:nth-child(3)::before {
     content: " ";
-    background-color: $background-color;
+    background-color:#f5f4fa ;
     background-image: url(../images/diagram.png);
     width: 270px;
     height: 120px;
@@ -66,7 +68,7 @@
   }
  &__item:nth-child(4)::before {
     content: " ";
-    background-color:$background-color;
+    background: color #f5f4fa;;
     background-image: url(../images/astronaut.png);
     width: 270px;
     height: 120px;

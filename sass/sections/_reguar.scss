@@ -1,6 +1,6 @@
 
 .regular {
- @extend%background;
+ background-color:#ffffff;
   margin-bottom: 94px;
   &__text {
     padding-top: 94px;
@@ -15,7 +15,7 @@
   }
   
   &__icon {
-    fill: $grey-color;
+    fill:  #afb1b8;
     width: 106px;
     height: 60px;
     flex-shrink: 0;
@@ -28,30 +28,35 @@
   }
   &__link {
     border-radius: 4px;
-    border: 1px solid $grey-color;
+    border: 1px solid #afb1b8;
     width: 170px;
     height: 92px;
     flex-shrink: 0;
- @include flexbox();
+display: flex;
     transition-property: border, border-radius;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__link:hover {
     border-radius: 4px;
-    border: 1px solid $accent-color;
+    border: 1px solid #2196f3;
   }
   &__link:hover svg {
-    fill: $accent-color;
+    fill: #2196f3;
   }
   
   &__list {
-    @include flexbox ($gap:30px);
+    flex-wrap: wrap;
+    display: flex;
+    gap: 30px;
     margin-top: 50px;
-    margin-left: 200px;
+    justify-content: center;
+    @media screen and (min-width:1200px){
+      flex-wrap: nowrap;
+    }
   }
   &__icon:hover {
-    fill: $accent-color;
+    fill: #2196f3;
   }
 }
 

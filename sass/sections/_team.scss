@@ -3,7 +3,7 @@
     width: 20px;
     height: 20px;
     flex-shrink: 0;
-    fill:$grey-color;
+    fill: #afb1b8;
     margin: 12px;
     justify-content: center;
     transition-property: fill;
@@ -15,7 +15,7 @@
   }
   
   &__icon:hover {
-    fill: $aditional-color;
+    fill: #ffffff;
   }
   &__link{
     width: 44px;
@@ -27,17 +27,17 @@
   }
   &__link &__icon:hover {
   
-    background-color: $accent-color;
+    background-color: #2196f3;
     border-radius: 50%;
   }
   &__icon :hover {
-    background-color: $accent-color;
+    background-color: #2196f3;
     border-radius: 50%;
     width: 44px;
     height: 44px;
   }
   &__bigtitle {
-    color: $tittle-color;
+    color: #212121;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -45,9 +45,11 @@
     letter-spacing: 1.08px;
     padding-top: 94px;
     padding-bottom: 50px;
+    justify-content: center;
+   
   }
   &__title {
-    color: $tittle-color;
+    color: #212121;
     text-align: center;
     font-size: 16px;
     font-weight: 500;
@@ -56,7 +58,7 @@
   }
   
   &__text {
-    color: $text-color;
+    color: #757575;
     text-align: center;
     font-size: 16px;
     font-weight: 400;
@@ -65,8 +67,14 @@
   }
   
 &__list {
-  @include flexbox ($gap:30px);
+  justify-content: center;
+ display: flex;
+ gap: 30px;
     padding-bottom: 94px;
+    flex-wrap: wrap;
+    @media screen and (min-width:1200px){
+      flex-wrap: nowrap;
+    }
   
   }
   
@@ -84,7 +92,7 @@
   &__item {
     border-radius: 0px 0px 4px 4px;
     border: 1px solid #eee;
-  @extend %background;
+//  background-color: #2196f3;
     padding-bottom: 42px;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),

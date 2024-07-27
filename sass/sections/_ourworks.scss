@@ -10,7 +10,7 @@
     letter-spacing: 1.08px;
   }
   &__text {
-    color: $text-color;
+    color: #757575;
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
@@ -18,16 +18,17 @@
     line-height: 30px; /* 187.5% */
     letter-spacing: 0.48px;
   }
-  
+
   &__item {
     width: 370px;
     border: 1px solid #eee;
-    @extend%background;
+    background-color:#ffffff;
     flex-basis: calc((100% - (30px * 2)) / 3);
   }
   &__list {
-    @include flexbox ($gap:30px,);
-    
+   display: flex;
+   gap: 30px;
+  flex-wrap: wrap;
   }
 
   &__box {
@@ -36,8 +37,7 @@
     padding-left: 24px;
     padding-right: 24px;
   }
-  
-  
+
   &__item:hover {
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
       0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
@@ -49,30 +49,28 @@
     width: 370px;
     height: 294px;
     position: absolute;
-    background: $accent-color;
+    background: #2196f3;
     top: 0;
     left: 0;
     opacity: 0;
-    
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      transform: translateY(100%);
-  
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(100%);
   }
   &__overley:hover {
     opacity: 1;
   }
-  &__mainoverley{
+  &__mainoverley {
     position: relative;
     overflow: hidden;
   }
   &__item:hover .ourworks-overley {
     overflow: visible;
     transform: translateY(0%);
-  
   }
   &__text {
-    color: $aditional-color;
+    color: #ffffff;
     font-family: Roboto;
     font-size: 18px;
     font-style: normal;
@@ -84,5 +82,4 @@
     padding-left: 24px;
     padding-right: 24px;
   }
-
 }
