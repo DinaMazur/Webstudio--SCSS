@@ -134,6 +134,9 @@ html {
 .header__conteiner {
   display: flex;
 }
+.header__button {
+  display: none;
+}
 .header__menu {
   width: 40px;
   height: 40px;
@@ -547,6 +550,11 @@ html {
   flex-wrap: wrap;
 }
 @media screen and (min-width: 1200px) {
+  .team__list {
+    flex-wrap: nowrap;
+  }
+}
+@media screen and (min-width: 768px) {
   .team__list {
     flex-wrap: nowrap;
   }
