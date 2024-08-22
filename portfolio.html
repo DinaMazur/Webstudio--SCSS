@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/conteiner.css" />
+    <link rel="stylesheet" href="./sass/base/_common.scss" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -19,15 +20,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/main.min.css">
-    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
   </head>
-  <body>
+  <body class="header__body">
     <header class="header">
       <div class="conteiner header__conteiner">
         <a class="header__alogo" href="./index.html"
           >Web<span class="header__logo">Studio</span></a
         >
+        <button type="menu" class="header-button">
+          <svg class="header__menu">
+            <use href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
         <ul class="header__list">
           <li class="header__item">
             <a class="header__link" href="./index.html">Studio</a>
@@ -59,7 +65,6 @@
         </ul>
       </div>
     </header>
-   
     <main>
       <section class="kinds">
         <div class="conteiner">
@@ -83,15 +88,42 @@
           <ul class="ourworks__list">
             <li class="ourworks__item">
               <div class="ourworks__mainoverley">
-              <div class="ourworks__overley">
-                <p class="overley__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
+                <div class="ourworks__overley">
+                  <p class="overley__text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/mobile/tehno@mobile-1x.webp 1x,
+                      ./images/mobile/tehno@mobile-2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="
+                      ./images/tablet/tehno@tablet-1x.webp 1x,
+                      ./images/tablet/tehno@tablet-2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/desktop/tehno@desktop-1x.webp 1x,
+                      ./images/desktop/tehno@desktop-2x.webp 2x
+                    "
+                  />
+                  <img
+                    class="ourworks__pic"
+                    src="./images/tehno.webp"
+                    alt="tehno"
+                  />
+                </picture>
               </div>
-              <img class="ourworks__pic" src="./images/tehno.webp" alt="tehno" />
-            </div>
               <div class="ourworks__box">
                 <h3 class="ourworks__maintext">Technocrack</h3>
                 <p class="ourworks__text">Website</p>
@@ -99,19 +131,42 @@
             </li>
             <li class="ourworks__item">
               <div class="main__overley">
-              <div class="ourworks__overley">
-                <p class="overley__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
+                <div class="ourworks__overley">
+                  <p class="overley__text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/mobile/basket@mobile-1x.webp 1x,
+                      ./images/mobile/basket@mobile-2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="
+                      ./images/tablet/basket@tablet-1x.webp 1x,
+                      ./images/tablet/basket@tablet-2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/desktop/basket@desktop-1x.webp 1x,
+                      ./images/desktop/basket@desktop-2x.webp 2x
+                    "
+                  />
+                  <img
+                    class="ourworks-pic"
+                    src="./images/basket.webp"
+                    alt="basket"
+                  />
+                </picture>
               </div>
-              <img
-                class="ourworks-pic"
-                src="./images/basket.webp"
-                alt="basket"
-              />
-            </div>
               <div class="ourworks__box">
                 <h3 class="ourworks__maintext">
                   New Orleans vs Golden Star poster
@@ -120,15 +175,42 @@
               </div>
             </li>
             <li class="ourworks__item">
-              <div class="main__overley"> 
-              <div class="ourworks__overley">
-                <p class="overley__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
-              </div>
-              <img class="ourworks__pic" src="./images/fish.webp" alt="fish" />
+              <div class="main__overley">
+                <div class="ourworks__overley">
+                  <p class="overley__text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/mobile/fish@mobile-1x.webp 1x,
+                      ./images/mobile/fish@mobile-2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="
+                      ./images/tablet/fish@tablet-1x.webp 1x,
+                      ./images/tablet/fish@tablet-2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/desktop/fish@desktop-1x.webp 1x,
+                      ./images/desktop/fish@desktop-2x.webp 2x
+                    "
+                  />
+                  <img
+                    class="ourworks__pic"
+                    src="./images/fish.webp"
+                    alt="fish"
+                  />
+                </picture>
               </div>
               <div class="ourworks__box">
                 <h3 class="ourworks__maintext">Seafood restaurant</h3>
@@ -137,18 +219,41 @@
             </li>
             <li class="ourworks__item">
               <div class="main__overley">
-              <div class="ourworks__overley">
-                <p class="overley__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
-              </div>
-              <img
-                class="ourworks__pic"
-                src="./images/headphones.webp"
-                alt="hesdphones"
-              />
+                <div class="ourworks__overley">
+                  <p class="overley__text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/mobile/headphones@mobile-1x.webp 1x,
+                      ./images/mobile/headphones@mobile-2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="
+                      ./images/tablet/headphones@tablet-1x.webp 1x,
+                      ./images/tablet/headphones@tablet-2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/desktop/haedphones@desktop-1x.webp 1x,
+                      ./images/desktop/headphones@desktop-2x.webp 2x
+                    "
+                  />
+                  <img
+                    class="ourworks__pic"
+                    src="./images/headphones.webp"
+                    alt="hesdphones"
+                  />
+                </picture>
               </div>
               <div class="ourworks__box">
                 <h3 class="ourworks__maintext">Project Prime</h3>
@@ -157,15 +262,42 @@
             </li>
             <li class="ourworks__item">
               <div class="main__overley">
-              <div class="ourworks__overley">
-                <p class="overley__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
+                <div class="ourworks__overley">
+                  <p class="overley__text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <picture>
+                  <source
+                    media="(max-width: 767px )"
+                    srcset="
+                      ./images/mobile/box@mobile-1x.webp 1x,
+                      ./images/mobile/box@mobile-2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="
+                      ./images/tablet/box@tablet-1x.webp 1x,
+                      ./images/tablet/box@tablet-2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/desktop/box@desktop-1x.webp 1x,
+                      ./images/desktop/box@desktop-2x.webp 2x
+                    "
+                  />
+                  <img
+                    class="ourworks__pic"
+                    src="./images/box.webp"
+                    alt="box"
+                  />
+                </picture>
               </div>
-              <img class="ourworks__pic" src="./images/box.webp" alt="box" />
-            </div>
               <div class="ourworks__box">
                 <h3 class="ourworks__maintext">Boxes project</h3>
                 <p class="ourworks__text">Application</p>
@@ -173,15 +305,40 @@
             </li>
             <li class="ourworks__item">
               <div class="main__overley">
-              <div class="ourworks__overley">
-                <p class="overley__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
+                <div class="ourworks__overley">
+                  <p class="overley__text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile/word@mobile-1x.webp 1x,
+                    ./images/mobile/word@mobile-2x.webp 2x
+                  "
+                />
+                <source
+                  media="max-width: 1199px"
+                  srcset="
+                    ./images/tablet/word@tablet-1x.webp 1x,
+                    ./images/tablet/word@tablet-2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop/word@desktop-1x.webp 1x,
+                    ./images/desktop/word@desktop-2x.webp
+                  "
+                />
+                <img
+                  class="ourworks__pic"
+                  src="./images/word.webp"
+                  alt="word"
+                />
               </div>
-              <img class="ourworks__pic" src="./images/word.webp" alt="word" />
-             </div>
               <div class="ourworks__box">
                 <h3 class="ourworks__maintext">Inspiration has no Borders</h3>
                 <p class="ourworks__text">Website</p>
@@ -189,15 +346,42 @@
             </li>
             <li class="ourworks__item">
               <div class="main__overley">
-              <div class="ourworks__overley">
-                <p class="overley__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
+                <div class="ourworks__overley">
+                  <p class="overley__text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/mobile/book@mobile-1x.webp 1x,
+                      ./images/mobile/book@mobile-2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="
+                      ./images/tablet/book@tablet-1x.webp 1x,
+                      ./images/tablet/book@tablet-2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      images/desktop/book@desktop-1x.webp   1x,
+                      ./images/desktop/book@desktop-2x.webp 2x
+                    "
+                  />
+                  <img
+                    class="ourworks__pic"
+                    src="./images/book.webp"
+                    alt="book"
+                  />
+                </picture>
               </div>
-              <img class="ourworks__pic" src="./images/book.webp" alt="book" />
-            </div>
               <div class="ourworks__box">
                 <h3 class="ourworks__maintext">Edition Limited Edition</h3>
                 <p class="ourworks__text">Design</p>
@@ -205,14 +389,41 @@
             </li>
             <li class="ourworks__item">
               <div class="main__overley">
-              <div class="ourwork__overley">
-                <p class="overley__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
-              </div>
-              <img class="ourworks__pic" src="./images/label.webp" alt="label" />
+                <div class="ourwork__overley">
+                  <p class="overley__text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/mobile/label@mobile-1x.webp 1x,
+                      ./images/mobile/label@mobile-2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="
+                      ./images/tablet/abel@tablet-1x.webp  1x,
+                      ./images/tablet/label@tablet-2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/desktop/label@desktop-1x.webp 1x,
+                      ./images/desktop/label@desktop-2x.webp 2x
+                    "
+                  />
+                  <img
+                    class="ourworks__pic"
+                    src="./images/label.webp"
+                    alt="label"
+                  />
+                </picture>
               </div>
               <div class="ourworks__box">
                 <h3 class="ourworks__maintext">LAB project</h3>
@@ -221,17 +432,18 @@
             </li>
             <li class="ourworks__item">
               <div class="main__overley">
-              <div class="ourworks__overley">
-                <p class="overley__text">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
-              </div>
-              <img
-                class="ourworks__pic"
-                src="./images/business.webp"
-                alt="busines"/> 
+                <div class="ourworks__overley">
+                  <p class="overley__text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <img
+                  class="ourworks__pic"
+                  src="./images/business.webp"
+                  alt="busines"
+                />
               </div>
               <div class="ourworks__box">
                 <h3 class="ourworks__maintext">Growing Business</h3>
@@ -242,11 +454,10 @@
         </div>
       </section>
     </main>
- 
-    
+
     <footer class="footer__contacs" id="contacts">
-      <div class="conteiner footer__box ">
-        <div class="footer__allinfo ">
+      <div class="conteiner footer__box">
+        <div class="footer__allinfo">
           <a class="footer__logo" href="">
             Web<span class="footer__partlogo">Studio</span>
           </a>
@@ -303,13 +514,12 @@
         </ul>
         <div class="footer__box">
           <h6 class="footer__paragraf">Subscribe to the newsletter</h6>
-          <label  class="footer__label" for="">
-          <input placeholder="E-mail" class="footer__form" type="text" />
-          <button class="footer__button" type="submit">Subscribe</button>
-        </label>
+          <label class="footer__label" for="">
+            <input placeholder="E-mail" class="footer__form" type="text" />
+            <button class="footer__button" type="submit">Subscribe</button>
+          </label>
         </div>
       </div>
-      
     </footer>
   </body>
 </html>

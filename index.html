@@ -121,32 +121,59 @@
           <h2 class="services__title">What do we do?</h2>
           <ul class="services__list">
             <li class="services__item">
-              <img
-                class="services__photo"
-                src="./images/komp.webp"
-                alt="komp"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/desktop/komp@desktop-1x.webp 1x,
+                    ./images/desktop/komp@desktop-2x.webp 2x
+                  "
+                />
+                <img
+                  class="services__photo"
+                  src="./images/komp.webp"
+                  alt="komp"
+                />
+              </picture>
               <div class="servises__box">
                 <p class="servises__paragraf">Десктопні додатки</p>
               </div>
             </li>
             <li class="services__item">
-              <img
-                class="services__photo"
-                src="./images/phon.webp"
-                alt="phon"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/desktop/komp@desktop-1x.webp 1x,
+                    ./images/desktop/komp@desktop-2x.webp 2x
+                  "
+                />
+                <img
+                  class="services__photo"
+                  src="./images/phon.webp"
+                  alt="phon"
+                />
+              </picture>
               <div class="servises__box">
                 <p class="servises__paragraf">Мобільні додатки</p>
               </div>
             </li>
 
             <li class="services__item">
-              <img
-                class="services__photo"
-                src="./images/graf.webp"
-                alt="graf"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop/graf@desktop-1x.webp 1x,
+                    ./images/desktop/graf@desktop-2x.webp 2x
+                  "
+                />
+                <img
+                  class="services__photo"
+                  src="./images/graf.webp"
+                  alt="graf"
+                />
+              </picture>
               <div class="servises__box">
                 <p class="servises__paragraf">Дизайнерські рішення</p>
               </div>
@@ -175,9 +202,20 @@
                   srcset="
                     ./images/mobile/man@mobile-1x.webp 1x,
                     ./images/mobile/man@mobile-2x.webp 2x
-                  " />
-                  <source media="(max-width: 1199px)" srcset="">
-                <img class="team__photo" src="./images/man.webp" alt="man" />
+                  "
+                />
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./images/tablet/man@tablet-1x.webp 1x,
+                    ./images/tablet/man@tablet-2x.webp 2x
+                  "
+                />
+                <img
+                  class="team__photo"
+                  src="./images/mobile/man@mobile-1x.webp"
+                  alt="man"
+                />
               </picture>
               <h3 class="team__tittle">Ihor Demyanenko</h3>
               <p class="team__text">Product Designer</p>
@@ -205,7 +243,34 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__photo" src="./images/women.webp" alt="woman" />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile/woman@mobile-1x.webp 1x,
+                    ./images/mobile/woman@mobile-2x.webp 2x
+                  "
+                />
+                <source
+                  media="(max-width:1199px)"
+                  srcset="
+                    ./images/tablet/woman@tablet-1x.webp 1x,
+                    ./images/tablet/woman@tablet-2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop/woman@desktop-1x.webp 1x,
+                    ./images/desktop/woman@desktop-2x.webp 2x
+                  "
+                />
+                <img
+                  class="team__photo"
+                  src="./images/mobile/woman@mobile-1x.webp"
+                  alt="woman"
+                />
+              </picture>
               <h3 class="team__tittle">Olga Repina</h3>
               <p class="team__text">Frontend Developer</p>
               <div class="team__box">
@@ -232,7 +297,34 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__photo" src="./images/man2.webp" alt="man2" />
+              <picture>
+                <source
+                  media="(max-width:767px)"
+                  srcset="
+                    ./images/mobile/man2@mobile-1x.webp 1x,
+                    ./images/mobile/man2@mobile-2x.webp 2x
+                  "
+                />
+                <source
+                  media="(max-width:1199px)"
+                  srcset="
+                    ./images/tablet/man2@tablet-1x.webp 1x,
+                    ./images/tablet/man2@tablet-2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/desktop/man2@desktop-1x.webp 1x,
+                    ./images/desktop/man2@desktop-2x.webp 2x
+                  "
+                />
+                <img
+                  class="team__photo"
+                  src="./images/desktop/man2@desktop-1x.webp"
+                  alt="man2"
+                />
+              </picture>
               <h3 class="team__tittle">Mykola Tarasov</h3>
               <p class="team__text">Marketing</p>
               <div class="team__box">
@@ -259,7 +351,34 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__photo" src="./images/man3.webp" alt="man3" />
+              <picture>
+                <source
+                  media="(max-width:767px)"
+                  srcset="
+                    ./images/mobile/man3@mobile-1x.webp 1x,
+                    ./images/mobile/man3@mobile-2x.webp 2x
+                  "
+                />
+                <source
+                  media="(max-width:1199px)"
+                  srcset="
+                    ./images/tablet/man3@tablet-1x.webp 1x,
+                    ./images/tabletman3@tablet-2x.webp  2x
+                  "
+                />
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/desktop/man3@desktop-1x.webp 1x,
+                    ./images/desktop/man3@desktop-2x.webp 2x
+                  "
+                />
+                <img
+                  class="team__photo"
+                  src="./images/mobile/man3@mobile-1x .webp"
+                  alt="man3"
+                />
+              </picture>
               <h3 class="team__tittle">Mykhailo Yermakov</h3>
               <p class="team__text">UI Designer</p>
               <div class="team__box">
