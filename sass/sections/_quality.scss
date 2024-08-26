@@ -19,11 +19,18 @@
   }
   
   &__list {
+    align-items: center;
+    justify-content: center;
     display: flex;
-   gap: 30px;
     flex-wrap: wrap;
+   gap: 30px;
+  
     @media screen and (min-width: 1200px){
       display: flex;
+    }
+    @media screen and (min-width: 768px){
+      flex-direction: row;
+      flex-wrap: wrap;
     }
   }
  
@@ -41,11 +48,15 @@
   }
   &__item {
     width: 100%;
+    max-width: 450px;
     display: flex;
     flex-direction: column;
+    @media screen and (min-width: 768px){
+      max-width: 250px;
+     }
  @media screen and (min-width:1200px){
-  max-width: 450px;
-  height: 120px;
+  max-width: 250px;
+  
  }
   }
   &__item:nth-child(2)::before {

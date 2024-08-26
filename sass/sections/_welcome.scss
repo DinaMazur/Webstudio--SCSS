@@ -9,14 +9,28 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/backgroundim.webp);
+      background-size: cover;
+      @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .box {
+    background-image: url(../images/tablet/backg@tablet-2x.webp);
+  }
+}
+      
       &__title {
         color: #ffffff;
         text-align: center;
-        font-size: 44px;
+        font-size: 26px;
         font-weight: 900;
         line-height: 60px; /* 136.364% */
         letter-spacing: 2.64px;
         text-transform: uppercase;
+        @media screen and (min-width: 1200px){
+          font-size: 44px;
+          
+        }
       }
       &__button {
         align-items: center;

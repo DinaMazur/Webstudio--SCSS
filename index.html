@@ -27,7 +27,7 @@
         <a class="header__alogo" href="./index.html"
           >Web<span class="header__logo">Studio</span></a
         >
-        <button type="menu" class="header-button">
+        <button type="button" class="header__button " data-menu-open>
           <svg class="header__menu">
             <use href="./images/symbol-defs.svg#icon-menu"></use>
           </svg>
@@ -49,18 +49,46 @@
               <svg class="header__icon">
                 <use href="./images/symbol-defs.svg#icon-envelope-hover"></use>
               </svg>
-              <span>info@devstudio.com </span></a
-            >
+              info@devstudio.com
+            </a>
           </li>
           <li class="header__contact">
             <a class="header__linkk" href="tel:+380961111111">
               <svg class="header__icon">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
               </svg>
-              <span>+38 096 111 11 11</span>
+              +38 096 111 11 11
             </a>
           </li>
         </ul>
+        <div class="header__burger is-hidden " data-menu>
+          <div class="header__section" >
+            <button data-menu-close class="header__close-menu">
+              <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="40" height="40">
+                <path fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              </button>
+         
+              <ul class="header__menulist">
+                <li class="header__menuitem"><a class="header-menulink" href="./portfolio.html">Портфоліо</a></li>
+                <li class="header__menuitem"><a class="header-menulink" href="./index.html">Студіо</a></li>
+                <li class="header__menuitem"><a class="header-menulink" href="#contacts">Контакти</a></li>
+              </ul>
+             <ul class="header__menucontacts">
+              <li class="header__menuitemscontacts"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+              <li class="header__menuitemscontacts"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            
+             </ul>
+            <ul class="haeder__appslist">
+            <li class="header__apps">Instagram</li>
+            <li class="header__apps">Twitter</li>
+            <li class="header__apps">Facebook</li>
+            <li class="header__apps">Linkedin</li>
+          </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -363,7 +391,7 @@
                   media="(max-width:1199px)"
                   srcset="
                     ./images/tablet/man3@tablet-1x.webp 1x,
-                    ./images/tablet/man3@tablet-2x.webp  2x
+                    ./images/tablet/man3@tablet-2x.webp 2x
                   "
                 />
                 <source
@@ -458,72 +486,78 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer__contacs" id="contacts">
+    <footer class="footer__contacs" id="contacts">
       <div class="conteiner footer__box">
         <div class="footer__allinfo">
-          <a class="footer__logo" href="">
-            Web<span class="footer__partlogo">Studio</span>
-          </a>
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a class="footer__adress" href="">Kyiv, 26 Lesi Ukrainky Ave</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="mailto: info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="tell:+38 096 111 11 11"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </div>
-        <ul>
+          <div class="footer__adaptive">
+            <a class="footer__logo" href="">
+              Web<span class="footer__partlogo">Studio</span>
+            </a>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__adress" href="">Kyiv, 26 Lesi Ukrainky Ave</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="tell:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
           <div>
             <h6 class="footer__paragraf">join</h6>
+
+            <ul class="footer__block">
+              <li>
+                <a class="footer__linkin" href="">
+                  <svg class="footer__icon">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="footer__linkin" href="">
+                  <svg class="footer__icon">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="footer__linkin" href="">
+                  <svg class="footer__icon">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="footer__linkin" href="">
+                  <svg class="footer__icon">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
-          <ul class="footer__block">
-            <li>
-              <a class="footer__linkin" href="">
-                <svg class="footer__icon">
-                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="footer__linkin" href="">
-                <svg class="footer__icon">
-                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="footer__linkin" href="">
-                <svg class="footer__icon">
-                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="footer__linkin" href="">
-                <svg class="footer__icon">
-                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </ul>
-        <div class="footer__box">
-          <h6 class="footer__paragraf">Subscribe to the newsletter</h6>
-          <label class="footer__label" for="">
-            <input placeholder="E-mail" class="footer__form" type="text" />
-            <button class="footer__button" type="submit">Subscribe</button>
-          </label>
+
+          <div class="footer__div">
+            <h6 class="footer__paragraf">Subscribe to the newsletter</h6>
+           
+              <label class="footer__label">
+                <div class="footer__boxxx">
+                <input placeholder="E-mail" class="footer__form" type="text" />
+                <button class="footer__button" type="submit">Subscribe</button>
+              </div>
+              </label>
+         
+          </div>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- <div data-modal class="backdrop">
       <div class="modal">
@@ -568,18 +602,20 @@
         </ul>
         <p class="modal__paragraf">Коментар</p>
         <input placeholder="Введіть текст" class="modal__forms2" type="text" />
-        <label class="modal__box" for="id">
-          <input class="modal__chexbox" type="checkbox" /> <
+        <label class="modal__box" >
+          <input class="modal__chexbox" type="checkbox" />
+        </label>
           <p class="modal__inf">
             Погоджуюся з розсилкою та приймаю
             <a class="modal__link" href="">Умови договору</a>
           </p>
-        </label>
+      
         <div class="modal__box2">
           <button class="modal__button" type="submit">Відправити</button>
         </div>
       </div>
-    </div>
-    <script src="./js/modal.js"></script> -->
+    </div> -->
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

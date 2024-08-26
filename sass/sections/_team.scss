@@ -67,7 +67,6 @@
   }
   
 &__list {
-  justify-content: center;
  display: flex;
  gap: 30px;
     padding-bottom: 94px;
@@ -76,7 +75,8 @@
       flex-wrap: nowrap;
     }
     @media screen and (min-width:768px){
-      flex-wrap: nowrap;
+  flex-wrap: wrap;
+   flex-direction: row;
     }
   }
   
@@ -92,7 +92,7 @@
   }
  
   &__item {
- 
+   
     border-radius: 0px 0px 4px 4px;
     border: 1px solid #eee;
 //  background-color: #2196f3;
@@ -100,6 +100,13 @@
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
       0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+      @media screen and (min-width: 1200px) {
+        max-width: 200px;
+      }
+      @media screen and (min-width: 768px) {
+        min-width: 330px;
+        max-width: 331px;
+      }
     }
     &__item:nth-child(1n){
    animation-name: team-item1;
