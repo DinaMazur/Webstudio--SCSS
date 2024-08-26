@@ -2,8 +2,8 @@
 
   max-width: 100%;
   background-color: #2f303a;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 198px;
   background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -17,14 +17,20 @@
   .box {
     background-image: url(../images/tablet/backg@tablet-2x.webp);
   }
+  @media screen and (min-width: 1200px){
+    
+    padding-top: 200px;
+    padding-bottom: 280px;
+  }
 }
       
       &__title {
+
         color: #ffffff;
         text-align: center;
         font-size: 26px;
         font-weight: 900;
-        line-height: 60px; /* 136.364% */
+        line-height: 42px; /* 136.364% */
         letter-spacing: 2.64px;
         text-transform: uppercase;
         @media screen and (min-width: 1200px){
