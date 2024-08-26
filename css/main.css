@@ -651,20 +651,25 @@ html {
   padding-bottom: 94px;
   flex-wrap: wrap;
 }
-@media screen and (min-width: 1200px) {
-  .team__list {
-    flex-wrap: nowrap;
-  }
-}
 @media screen and (min-width: 768px) {
   .team__list {
     flex-wrap: wrap;
     flex-direction: row;
   }
 }
-.team__-bigtitle {
-  padding-top: 94px;
+@media screen and (min-width: 1200px) {
+  .team__list {
+    flex-wrap: nowrap;
+  }
+}
+.team__bigtitle {
+  padding-top: 60px;
   padding-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .team__bigtitle {
+    padding-top: 94px;
+  }
 }
 .team__tittle {
   margin-top: 30px;
@@ -677,15 +682,14 @@ html {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
-@media screen and (min-width: 1200px) {
-  .team__item {
-    max-width: 200px;
-  }
-}
 @media screen and (min-width: 768px) {
   .team__item {
-    min-width: 330px;
-    max-width: 331px;
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    max-width: 270px;
   }
 }
 .team__item:nth-child(1n) {
@@ -715,11 +719,16 @@ html {
   color: #212121;
   text-align: center;
   font-family: Roboto;
-  font-size: 36px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1.08px;
+}
+@media screen and (min-width: 1200px) {
+  .regular__text {
+    font-size: 36px;
+  }
 }
 .regular__icon {
   fill: #afb1b8;
