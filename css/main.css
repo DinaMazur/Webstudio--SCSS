@@ -438,7 +438,7 @@ html {
 .quality {
   display: flex;
   padding-top: 85px;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
 }
 .quality__title {
   color: #212121;
