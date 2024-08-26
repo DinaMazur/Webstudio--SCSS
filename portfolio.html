@@ -189,7 +189,7 @@
                     "
                   />
                   <img
-                    class="ourworks-pic"
+                    class="ourworks__pic"
                     src="./images/basket.webp"
                     alt="basket"
                   />
@@ -199,7 +199,7 @@
                 <h3 class="ourworks__maintext">
                   New Orleans vs Golden Star poster
                 </h3>
-                <p class="ourworks-text">Design</p>
+                <p class="ourworks__text">Design</p>
               </div>
             </li>
             <li class="ourworks__item">
@@ -486,66 +486,72 @@
     <footer class="footer__contacs" id="contacts">
       <div class="conteiner footer__box">
         <div class="footer__allinfo">
-          <a class="footer__logo" href="">
-            Web<span class="footer__partlogo">Studio</span>
-          </a>
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a class="footer__adress" href="">Kyiv, 26 Lesi Ukrainky Ave</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="mailto: info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="tell:+38 096 111 11 11"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </div>
-        <ul>
+          <div class="footer__adaptive">
+            <a class="footer__logo" href="">
+              Web<span class="footer__partlogo">Studio</span>
+            </a>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__adress" href="">Kyiv, 26 Lesi Ukrainky Ave</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="tell:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
           <div>
             <h6 class="footer__paragraf">join</h6>
+
+            <ul class="footer__block">
+              <li>
+                <a class="footer__linkin" href="">
+                  <svg class="footer__icon">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="footer__linkin" href="">
+                  <svg class="footer__icon">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="footer__linkin" href="">
+                  <svg class="footer__icon">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="footer__linkin" href="">
+                  <svg class="footer__icon">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
-          <ul class="footer__block">
-            <li>
-              <a class="footer__linkin" href="">
-                <svg class="footer__icon">
-                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="footer__linkin" href="">
-                <svg class="footer__icon">
-                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="footer__linkin" href="">
-                <svg class="footer__icon">
-                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="footer__linkin" href="">
-                <svg class="footer__icon">
-                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </ul>
-        <div class="footer__box">
-          <h6 class="footer__paragraf">Subscribe to the newsletter</h6>
-          <label class="footer__label" for="">
-            <input placeholder="E-mail" class="footer__form" type="text" />
-            <button class="footer__button" type="submit">Subscribe</button>
-          </label>
+
+          <div class="footer__div">
+            <h6 class="footer__paragraf">Subscribe to the newsletter</h6>
+           
+              <label class="footer__label">
+                <div class="footer__boxxx">
+                <input placeholder="E-mail" class="footer__form" type="text" />
+                <button class="footer__button" type="submit">Subscribe</button>
+              </div>
+              </label>
+         
+          </div>
         </div>
       </div>
     </footer>

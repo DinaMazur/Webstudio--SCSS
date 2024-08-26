@@ -24,12 +24,12 @@
 }
 @media screen and (min-width: 768px) {
   .conteiner {
-    max-width: 738px;
+    max-width: 800px;
   }
 }
 @media screen and (min-width: 1200px) {
   .conteiner {
-    max-width: 1170px;
+    max-width: 1200px;
   }
 }
 
@@ -375,7 +375,7 @@ html {
   max-width: 100%;
   background-color: #2f303a;
   padding-top: 118px;
-  padding-bottom: 198px;
+  padding-bottom: 118px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundim.webp);
   background-size: cover;
 }
@@ -387,7 +387,7 @@ html {
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .welcome {
     padding-top: 200px;
-    padding-bottom: 280px;
+    padding-bottom: 200px;
   }
 }
 .welcome__title {
@@ -437,7 +437,7 @@ html {
 
 .quality {
   display: flex;
-  padding-top: 85px;
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 .quality__title {
@@ -493,12 +493,12 @@ html {
 }
 @media screen and (min-width: 768px) {
   .quality__item {
-    max-width: 250px;
+    width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
   .quality__item {
-    max-width: 250px;
+    max-width: 270px;
   }
 }
 .quality__item:nth-child(2)::before {
@@ -635,7 +635,7 @@ html {
 .team__bigtitle {
   color: #212121;
   text-align: center;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1.08px;
@@ -645,6 +645,7 @@ html {
 @media screen and (min-width: 1200px) {
   .team__bigtitle {
     padding-bottom: 50px;
+    font-size: 36px;
   }
 }
 .team__title {
@@ -722,10 +723,9 @@ html {
 
 .regular {
   background-color: #ffffff;
-  margin-bottom: 94px;
+  padding-bottom: 60px;
 }
 .regular__text {
-  padding-top: 60px;
   color: #212121;
   text-align: center;
   font-family: Roboto;
@@ -739,6 +739,9 @@ html {
   .regular__text {
     font-size: 36px;
   }
+}
+.regular__conteiner {
+  padding-top: 60px;
 }
 .regular__icon {
   fill: #afb1b8;
@@ -774,7 +777,7 @@ html {
   flex-wrap: wrap;
   display: flex;
   gap: 30px;
-  margin-top: 50px;
+  margin-top: 30px;
   justify-content: center;
 }
 @media screen and (min-width: 1200px) {
@@ -1073,6 +1076,20 @@ html {
   font-weight: 400;
   line-height: 24px; /* 171.429% */
   letter-spacing: 0.42px;
+}
+.footer__allinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__allinfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .backdrop {

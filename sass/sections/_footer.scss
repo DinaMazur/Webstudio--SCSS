@@ -165,4 +165,16 @@
     line-height: 24px; /* 171.429% */
     letter-spacing: 0.42px;
   }
+  &__allinfo{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+@media screen  and (min-width: 1200px){
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+  }
 }

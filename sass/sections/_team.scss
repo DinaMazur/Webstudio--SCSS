@@ -49,7 +49,7 @@
   &__bigtitle {
     color: #212121;
     text-align: center;
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1.08px;
@@ -57,7 +57,7 @@
     justify-content: center;
     @media screen  and (min-width: 1200px){
       padding-bottom: 50px;
-      
+      font-size: 36px;
     }
    
   }
