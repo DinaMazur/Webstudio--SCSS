@@ -3,70 +3,114 @@
   background-color: #2f303a;
   padding-top: 118px;
   padding-bottom: 118px;
-  background-image: linear-gradient(
+  
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), #2f303a66),
+    url("../images/mobile/backg@mobile-1x.webp"),
+    url("../images/backgroundim.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/backgroundim.webp);
-      @media screen and (min-width: 1200px){
-      padding-top: 200px;
-      padding-bottom: 280px;
+      url("../images/mobile/backg@mobile-2x.webp"),
+      url("../images/backgroundim.webp");
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), #2f303a66),
+      url("../images/tablet/backg@tablet-1x.webp"),
+      url("../images/backgroundim.webp");
+      background-size: cover;
+      background-repeat: no-repeat;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/tablet/backg@tablet-2x.webp"),
+        url("../images/backgroundim.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 280px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), #2f303a66),
+    url("../images/desktop/backg@desktop-1x.webp"),
+    url("../images/backgroundim.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/desktop/backg@desktop-2x.webp"),
+      url("../images/backgroundim.webp");
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  }
 
-      &__title {
-        margin-left: auto;
-        margin-right: auto;
-        justify-content: center;
-        align-items: center;
-        color: #ffffff;
-        text-align: center;
-        font-size: 26px;
-        font-weight: 900;
-        line-height: 42px; /* 136.364% */
-        letter-spacing: 2.64px;
-        text-transform: uppercase;
-      max-width: 360px;
+  &__title {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 42px; /* 136.364% */
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
+    max-width: 360px;
 
-        @media screen and (min-width: 1200px){
-          font-size: 44px;
-          line-height: 60px;
-          max-width: 696px;
-        }
-      }
-      &__button {
-        align-items: center;
-        justify-content: center;
-        color: #ffffff;
-        text-align: center;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 30px; /* 187.5% */
-        letter-spacing: 0.96px;
-        border-radius: 4px;
-        background: #2196f3;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-        border: none;
-        animation-name: welcome-button;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-      }
-    
-      &__conteiner {
-        display: block;
-        align-items: center;
-      }
-      &__button {
-
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        justify-content: center;
-        width: 216px;
-        height: 50px;
-        margin-top: 30px;
-      }
-      
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 60px;
+      max-width: 696px;
     }
-  
-  
-  
+  }
+  &__button {
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px; /* 187.5% */
+    letter-spacing: 0.96px;
+    border-radius: 4px;
+    background: #2196f3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border: none;
+    animation-name: welcome-button;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+
+  &__conteiner {
+    display: block;
+    align-items: center;
+  }
+  &__button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    width: 216px;
+    height: 50px;
+    margin-top: 30px;
+  }
+}
