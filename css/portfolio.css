@@ -196,14 +196,42 @@ input {
   line-height: normal;
   letter-spacing: 0.8px;
 }
-.header__ {
-  display: flex;
-  gap: 5px;
+.header__menulink:hover {
+  color: #2196F3;
 }
 .header__menulist {
-  padding-bottom: 302px;
+  display: flex;
+}
+.header__menulist {
+  margin-bottom: 302px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.header__number {
+  color: #757575;
+  font-family: Roboto;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.68px;
+}
+.header__email {
+  color: #757575;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+.header__number:hover {
+  color: #2196F3;
+}
+.header__boxcontacts {
   display: block;
-  gap: 30px;
+  flex-direction: column;
 }
 .header__mobilemenu {
   margin-bottom: 48px;
@@ -265,6 +293,15 @@ input {
 }
 .header__alogo {
   display: block;
+}
+.header__aaapps {
+  color: #2196F3;
+  font-family: Roboto;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.68px;
 }
 .header__link {
   color: #212121;
