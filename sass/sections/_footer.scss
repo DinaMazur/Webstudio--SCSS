@@ -144,6 +144,13 @@
   }
 &__part{
   padding-top: 60px;
+  @media screen and (min-width: 768px){
+    margin-left: 300px;
+  }
+  @media screen and (min-width: 1200px){
+    margin-left: 93px;
+    margin-right: 93px;
+  }
 }
   &__alogo {
     color: #2196f3;
@@ -158,6 +165,14 @@
   }
   &__adaptive {
     align-items: start;
+    @media screen and (min-width: 768px){
+      // margin-right: 300px;
+    }
+    @media screen and (min-width: 1200px) {
+     
+    }
+  
+  
   }
   &__partlogo {
     color: #ffffff;
@@ -184,7 +199,9 @@ align-items: center;
 justify-content: center;
 @media screen and (min-width: 768px) {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+ 
+
 }
 @media screen  and (min-width: 1200px){
   display: flex;

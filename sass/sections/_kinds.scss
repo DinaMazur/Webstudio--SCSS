@@ -28,8 +28,12 @@ color: white;
   
   &__list {
  display: flex;
+flex-direction: column;
  gap: 8px;
 justify-content: center;
+@media screen and (min-width: 1200px){
+  display: flex;
+}
   }
  
   &__button {
