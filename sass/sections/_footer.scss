@@ -146,6 +146,7 @@
   padding-top: 60px;
   @media screen and (min-width: 768px){
     margin-left: 300px;
+    padding-top: 0px;
   }
   @media screen and (min-width: 1200px){
     margin-left: 93px;
@@ -199,8 +200,9 @@ align-items: center;
 justify-content: center;
 @media screen and (min-width: 768px) {
   display: flex;
-  flex-direction: column;
- 
+  flex-direction: row;
+  flex-wrap: wrap ;
+align-items: flex-start;
 
 }
 @media screen  and (min-width: 1200px){

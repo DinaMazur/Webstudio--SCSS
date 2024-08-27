@@ -580,6 +580,7 @@ input {
 @media screen and (min-width: 768px) {
   .footer__part {
     margin-left: 300px;
+    padding-top: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -629,7 +630,9 @@ input {
 @media screen and (min-width: 768px) {
   .footer__allinfo {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -642,7 +645,6 @@ input {
 }
 
 .conteiner {
-  outline: solid red;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
