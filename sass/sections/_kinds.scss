@@ -1,6 +1,10 @@
 .kinds {
-  padding-top: 94px;
-  padding-bottom: 56px;
+  padding-top: 60px;
+  padding-bottom: 46px;
+  @media screen and (min-width: 1200px){
+    padding-top: 94px;
+    padding-bottom: 56px;
+  }
   
   &__button:hover {
 color: white;
@@ -27,10 +31,13 @@ color: white;
   }
   
   &__list {
+    justify-content: start;
  display: flex;
-flex-direction: column;
  gap: 8px;
-justify-content: center;
+flex-wrap: wrap;
+@media screen and (min-width: 768px) {
+  justify-content: center;
+}
 @media screen and (min-width: 1200px){
   display: flex;
 }
