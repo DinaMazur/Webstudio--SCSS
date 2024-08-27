@@ -1,13 +1,11 @@
-.team{
-  &__team{
-
-    @media screen and (min-width: 1200px){
+.team {
+  &__team {
+    @media screen and (min-width: 1200px) {
       padding-top: 94px;
     }
   }
-  &__conteiner{
+  &__conteiner {
     padding-top: 60px;
-   
   }
   &__icon {
     width: 20px;
@@ -21,13 +19,13 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__box {
-   @include flexbox ($gap:10px);
+    @include flexbox($gap: 10px);
   }
-  
+
   &__icon:hover {
     fill: #ffffff;
   }
-  &__link{
+  &__link {
     width: 44px;
     height: 44px;
     flex-shrink: 0;
@@ -36,7 +34,6 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__link &__icon:hover {
-  
     background-color: #2196f3;
     border-radius: 50%;
   }
@@ -53,13 +50,12 @@
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1.08px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     justify-content: center;
-    @media screen  and (min-width: 1200px){
+    @media screen and (min-width: 1200px) {
       padding-bottom: 50px;
       font-size: 36px;
     }
-   
   }
   &__title {
     color: #212121;
@@ -69,7 +65,7 @@
     line-height: normal;
     letter-spacing: 0.48px;
   }
-  
+
   &__text {
     color: #757575;
     text-align: center;
@@ -78,60 +74,56 @@
     line-height: normal;
     letter-spacing: 0.48px;
   }
-  
-&__list {
- display: flex;
- gap: 30px;
+
+  &__list {
+    display: flex;
+    gap: 30px;
     padding-bottom: 60px;
     flex-wrap: wrap;
-  
-    @media screen and (min-width:768px){
-  flex-wrap: wrap;
-   flex-direction: row;
+    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+      flex-wrap: wrap;
+      flex-direction: row;
     }
-    @media screen and (min-width:1200px){
+    @media screen and (min-width: 1200px) {
       flex-wrap: nowrap;
       padding-bottom: 94px;
     }
   }
-  
 
-  
   &__tittle {
     margin-top: 30px;
     text-align: center;
   }
- 
+
   &__item {
-   
     border-radius: 0px 0px 4px 4px;
     border: 1px solid #eee;
-//  background-color: #2196f3;
+    //  background-color: #2196f3;
     padding-bottom: 42px;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
       0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-     
-      @media screen and (min-width: 768px) {
-       
-        max-width: 354px;
-      }
-      @media screen and (min-width: 1200px) {
-        max-width: 270px;
-      }
+
+    @media screen and (min-width: 768px) {
+      max-width: 354px;
     }
-    &__item:nth-child(1n){
-   animation-name: team-item1;
-   animation-duration: 3s;
-   animation-iteration-count: infinite;
-  
+    @media screen and (min-width: 1200px) {
+      max-width: 270px;
     }
-    &__item:nth-child(2n){
-      animation-name: team-item2;
-   animation-duration: 3s;
-   animation-iteration-count: infinite;
-    }
-    
+  }
+  &__item:nth-child(1n) {
+    animation-name: team-item1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+  &__item:nth-child(2n) {
+    animation-name: team-item2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
   &__tittle {
     margin-top: 30px;
   }
@@ -140,5 +132,3 @@
     padding-bottom: 30px;
   }
 }
-
-  

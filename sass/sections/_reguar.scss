@@ -2,6 +2,9 @@
 .regular {
  background-color:#ffffff;
   padding-bottom: 60px;
+  @media screen and (min-width: 1200px){
+    padding-bottom: 94px;
+  }
   &__text {
   
     color: #212121;
@@ -18,7 +21,12 @@
     }
   }
   &__conteiner{
+
     padding-top: 60px;
+    @media screen and (min-width: 1200px){
+      padding-top: 94px;
+
+    }
   }
   &__icon {
     fill:  #afb1b8;
@@ -39,9 +47,17 @@
     height: 92px;
     flex-shrink: 0;
 display: flex;
+align-items: center;
+justify-content: center;
     transition-property: border, border-radius;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      @media screen and (min-width: 768px){
+        width: 226px;
+      }
+      @media screen and (min-width: 1200px){
+        width: 170px;
+      }
   }
   &__link:hover {
     border-radius: 4px;
@@ -57,9 +73,17 @@ display: flex;
     gap: 30px;
     margin-top: 30px;
     justify-content: center;
+    @media screen and (min-width: 768px){
+   
+      flex-wrap: wrap;
+    }
     @media screen and (min-width:1200px){
       flex-wrap: nowrap;
+      margin-top: 50px;
     }
+  }
+  &__item{
+   
   }
   &__icon:hover {
     fill: #2196f3;

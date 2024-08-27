@@ -22,6 +22,12 @@
     line-height: 24px; /* 171.429% */
     letter-spacing: 0.42px;
   }
+
+  &__list{
+    margin-top: 20px;
+    gap: 10px;
+  }
+
   &__link {
     color: rgba(255, 255, 255, 0.6);
     font-size: 14px;
@@ -36,11 +42,13 @@
     padding-bottom: 60px;
   }
   &__linkin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 100px;
     background-color: rgba(255, 255, 255, 0.1);
     width: 44px;
     height: 44px;
-    display: flex;
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -55,6 +63,7 @@
     fill: #ffffff;
   }
   &__div {
+    margin-top: 60px;
     display: flex;
     gap: 20px;
     flex-direction: column;
@@ -82,8 +91,8 @@
     line-height: normal;
     letter-spacing: 0.42px;
     text-transform: uppercase;
-    margin-bottom: 32px;
-    margin-top: 60px;
+    margin-bottom: 20px;
+    // margin-top: 60px;
   }
   &__form {
     width:100%;
@@ -133,7 +142,9 @@
     margin-bottom: 30px;
     margin-top: 20px;
   }
-
+&__part{
+  padding-top: 60px;
+}
   &__alogo {
     color: #2196f3;
     font-family: Raleway;
@@ -166,10 +177,15 @@
     letter-spacing: 0.42px;
   }
   &__allinfo{
+    text-align: center;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+@media screen and (min-width: 768px) {
+  display: flex;
+  flex-direction: row;
+}
 @media screen  and (min-width: 1200px){
   display: flex;
   flex-direction: row;

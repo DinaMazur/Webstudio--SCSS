@@ -377,20 +377,16 @@ html {
   padding-top: 118px;
   padding-bottom: 118px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundim.webp);
-  background-size: cover;
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .welcome .box {
-    background-image: url(../images/tablet/backg@tablet-2x.webp);
-  }
-}
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .welcome {
     padding-top: 200px;
-    padding-bottom: 200px;
+    padding-bottom: 280px;
   }
 }
 .welcome__title {
+  justify-content: center;
+  align-items: center;
   color: #ffffff;
   text-align: center;
   font-size: 26px;
@@ -398,10 +394,13 @@ html {
   line-height: 42px; /* 136.364% */
   letter-spacing: 2.64px;
   text-transform: uppercase;
+  max-width: 360px;
 }
 @media screen and (min-width: 1200px) {
   .welcome__title {
     font-size: 44px;
+    line-height: 60px;
+    max-width: 696px;
   }
 }
 .welcome__button {
@@ -440,7 +439,14 @@ html {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .quality {
+    padding-top: 94px;
+    padding-bottom: 118px;
+  }
+}
 .quality__title {
+  text-align: center;
   color: #212121;
   font-size: 14px;
   font-weight: 700;
@@ -449,6 +455,7 @@ html {
   text-transform: uppercase;
 }
 .quality__text {
+  margin-top: 10px;
   color: #757575;
   font-size: 14px;
   font-weight: 400;
@@ -639,7 +646,7 @@ html {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1.08px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   justify-content: center;
 }
 @media screen and (min-width: 1200px) {
@@ -669,6 +676,7 @@ html {
   gap: 30px;
   padding-bottom: 60px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .team__list {
@@ -725,6 +733,11 @@ html {
   background-color: #ffffff;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .regular {
+    padding-bottom: 94px;
+  }
+}
 .regular__text {
   color: #212121;
   text-align: center;
@@ -742,6 +755,11 @@ html {
 }
 .regular__conteiner {
   padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .regular__conteiner {
+    padding-top: 94px;
+  }
 }
 .regular__icon {
   fill: #afb1b8;
@@ -762,9 +780,21 @@ html {
   height: 92px;
   flex-shrink: 0;
   display: flex;
+  align-items: center;
+  justify-content: center;
   transition-property: border, border-radius;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .regular__link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .regular__link {
+    width: 170px;
+  }
 }
 .regular__link:hover {
   border-radius: 4px;
@@ -780,9 +810,15 @@ html {
   margin-top: 30px;
   justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .regular__list {
+    flex-wrap: wrap;
+  }
+}
 @media screen and (min-width: 1200px) {
   .regular__list {
     flex-wrap: nowrap;
+    margin-top: 50px;
   }
 }
 .regular__icon:hover {
@@ -932,6 +968,10 @@ html {
   line-height: 24px; /* 171.429% */
   letter-spacing: 0.42px;
 }
+.footer__list {
+  margin-top: 20px;
+  gap: 10px;
+}
 .footer__link {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
@@ -946,11 +986,13 @@ html {
   padding-bottom: 60px;
 }
 .footer__linkin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 100px;
   background-color: rgba(255, 255, 255, 0.1);
   width: 44px;
   height: 44px;
-  display: flex;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -965,6 +1007,7 @@ html {
   fill: #ffffff;
 }
 .footer__div {
+  margin-top: 60px;
   display: flex;
   gap: 20px;
   flex-direction: column;
@@ -992,8 +1035,7 @@ html {
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
-  margin-bottom: 32px;
-  margin-top: 60px;
+  margin-bottom: 20px;
 }
 .footer__form {
   width: 100%;
@@ -1046,6 +1088,9 @@ html {
   margin-bottom: 30px;
   margin-top: 20px;
 }
+.footer__part {
+  padding-top: 60px;
+}
 .footer__alogo {
   color: #2196f3;
   font-family: Raleway;
@@ -1078,10 +1123,17 @@ html {
   letter-spacing: 0.42px;
 }
 .footer__allinfo {
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .footer__allinfo {
+    display: flex;
+    flex-direction: row;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer__allinfo {

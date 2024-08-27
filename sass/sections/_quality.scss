@@ -2,7 +2,13 @@
   display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
+  @media screen and (min-width: 1200px){
+    padding-top: 94px;
+    padding-bottom: 118px;
+  }
+
   &__title {
+    text-align: center;
     color: #212121;
     font-size: 14px;
     font-weight: 700;
@@ -11,6 +17,7 @@
     text-transform: uppercase;
   }
  &__text {
+  margin-top: 10px;
     color: #757575;
     font-size: 14px;
     font-weight: 400;
